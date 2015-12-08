@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Elisa Navarro Zuara</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div id="principal">
+		<header>
+			<h1><a href="#">Gestor de tareas</a></h1>
+			<div id="search-module">
+				<form action="/" method="get" class="search-form">
+					<a href="#"><object data="img/buscar.svg" type="image/svg+xml"></object></a>
+ 					<input type="text" id="search" name="search" value="" placeholder="Buscar rápido..." />
+				</form>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Tareas</a></li>
+					<li><a href="anadirTarea.html">Añadir tareas</a></li>
+					<li><a href="#">Calendario</a></li>
+				</ul>
+			</nav>
+		</header>
+		<aside>
+			<ul>
+				<li class="inbox"><a href="index.html"><img src="icons/inbox.png"> Tareas</a></li>
+				<li class="inbox"><a href="#"><img src="icons/calendar.png"> Hoy</a></li>
+				<li class="inbox"><a href="#"><img src="icons/calendar2.png"> Próximos 7 días</a></li>
+				<li>
+					<span class="option">Asignaturas</span>
+					<ul class="asignatura">
+						<li><a href="#dwec">Desarrollo Web Entorno Cliente</a></li>
+						<li><a href="#">Desarrollo Web Entorno Servidor</a></li>
+						<li><a href="#">Despliegue de Aplicaciones Web</a></li>
+						<li><a href="#diw">Diseño de Interfaces Web</a></li>
+						<li><a href="#">HLC Desarrollo Móvil</a></li>
+						<li><a href="#">Empresas e Iniciativa Emprendedora</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="option">Tipo</span>
+					<ul class="filtro">
+						<li>Tareas <input name="tipo[]" type="checkbox" value="tareas" /></li>
+						<li>Proyectos <input name="tipo[]" type="checkbox" value="proyectos" /></li>
+						<li>Examenes <input name="tipo[]" type="checkbox" value="examenes" /></li>
+						<br />
+						<li>Todos <input name="tipo[]" type="checkbox" value="todos" checked /></li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<main>
+			<section>
+				<h2>Tareas</h2>
+				<article>
+					<header><h3><a name="dwec">Desarrollo Web en Entorno Cliente</a></h3></header>
+					<div class="tarea">
+						<h4>Tareas</h4>
+						<ul class="list">
+							<li>
+								<h5><a href="#">Lindo Gatito</a></h5>
+								<span class="fecha"><span class="calendar"></span> Fecha entrega: 10/12/2015</span>
+								<div class="descripcion">
+									Crea una clase Gato, y a partir de ella crea tantos gatos como quiera el usuario.
+									Cada gato tendrá un nombre, una fecha de nacimiento, una raza y un peso (1-15). Cada vez que crees un objeto gato aparecerá una ventana nueva con una imagen que cambiará en función de su estado (comiendo, durmiendo y jugando, que es su estado habitual). El usuario podrá averiguar la edad del gato partiendo de un evento.
+								</div>
+								<div class="iconos">
+									<a href="#" class="check"></a>
+									<a href="#" class="editar"></a>
+									<a href="#" class="borrar"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="examen">
+						<h4>Examenes</h4>
+						<ul class="list">
+							<li>
+								<h5><a href="#">Examen JavaScript</a></h5>
+								<span class="fecha"><span class="calendar"></span> Fecha examen: 10/12/2015</span>
+								<div class="descripcion">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam porro facere modi sed blanditiis quam, ipsa commodi totam, doloribus minus neque ratione velit voluptatem error suscipit minima possimus eos voluptas.
+								</div>
+								<div class="iconos">
+									<a href="#" class="check"></a>
+									<a href="#" class="editar"></a>
+									<a href="#" class="borrar"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<header><h3><a name="diw">Diseño de Interfaces Web</a></h3></header>
+					<div class="tarea">
+						<h4>Tareas</h4>
+						<ul class="list">
+							<li>
+								<h5><a href="#">Práctica 10 - Creación de un Blog</a></h5>
+								<span class="fecha"><span class="calendar"></span> <span class="fechaFinalizada">Fecha entrega: 26/11/2015</span></span>
+								<div class="descripcion">
+									Crea un blog en html5 y css3 desde cero, como hemos visto en clase, cumpliendo los requisitos.
+								</div>
+								<div class="iconos">
+									<a href="#" class="check"></a>
+									<a href="#" class="editar"></a>
+									<a href="#" class="borrar"></a>
+								</div>
+							</li>
+							<hr>
+							<li>
+								<h5><a href="#">Práctica 11 - Aplicación Gestor de Tareas</a></h5>
+								<span class="fecha"><span class="calendar"></span> Fecha entrega: 10/12/2015</span>
+								<div class="descripcion">
+									Imagina que tienes que crear la estructura y el diseño de un Gestor de Tareas de todos los módulos de segundo de DAW.
+								</div>
+								<div class="iconos">
+									<a href="#" class="check"></a>
+									<a href="#" class="editar"></a>
+									<a href="#" class="borrar"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="examen">
+						<h4>Examenes</h4>
+						<ul class="list">
+							<li>
+								<h5><a href="#">Examen HTML5 y CSS3</a></h5>
+								<span class="fecha"><span class="calendar"></span> Fecha examen: 14/12/2015</span>
+								<div class="descripcion">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam porro facere modi sed blanditiis quam, ipsa commodi totam, doloribus minus neque ratione velit voluptatem error suscipit minima possimus eos voluptas.
+								</div>
+								<div class="iconos">
+									<a href="#" class="check"></a>
+									<a href="#" class="editar"></a>
+									<a href="#" class="borrar"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; Creado por Elisa Navarro Zuara</p>
+		</footer>
+	</div>
+</body>
+</html>
